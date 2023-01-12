@@ -16,7 +16,9 @@ export default function ScoreBoard() {
     </div>
     <div className='name'>
         <div className='n'>{name}</div>
-        <div className='edit'></div>
+        <div className='edit' onClick={()=>{
+          setopen(!open);
+        }}></div>
 
 
     </div>

@@ -8,6 +8,7 @@ import Kar from '../images/kar.png';
 import Nol from '../images/nol.png';
 import { ScoreContext } from '../App';
 import ScoreBoard from './ScoreBoard';
+import Popup from './Popup';
 // import React from 'react';
 
 export default function Homepage() {
@@ -30,6 +31,7 @@ export default function Homepage() {
         },100)
       }}
       >
+        <Popup></Popup>
         <ScoreBoard></ScoreBoard>
         <div className='cursor' style={{top:ypos,left:xpos}}></div>
         <div className='container-fluid'>
