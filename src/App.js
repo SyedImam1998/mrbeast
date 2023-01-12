@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React,{ useState } from 'react';
 import './App.css';
 
+import Homepage from './component/Homepage';
+export const ScoreContext=React.createContext();
 function App() {
+const[score,setScore]=useState(0);
+const[name,setName]=useState("imam");
+const[open,setopen]=useState(true)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScoreContext.Provider value={{value:[score,setScore],value2:[name,setName],value3:[open,setopen]}}>
+
+      <Homepage></Homepage>
+    </ScoreContext.Provider>
   );
 }
 
