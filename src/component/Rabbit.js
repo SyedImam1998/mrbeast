@@ -11,7 +11,7 @@ export default function Rabbit(props) {
         <div className='rabbitParent' style={{top:props.top,left:props.left}}>
         
         <div className='rabbitP'>
-          <div className='rabbit' onClick={()=>{
+          <div className='rabbit' id={props.id} onClick={()=>{
             setScore(parseInt(score+1));
             console.log("score",score)
           }} style={{ backgroundImage: `url(${props.image})`}}></div>

@@ -4,11 +4,24 @@
   position: fixed;
   top:0;
   left:0;
- background-color: black;
+ /* background-color: black; */
+ background-image: url('./images/Group\ 7.png');
+ background-position: center;
+ background-size: cover;
+ /* z-index: 10; */
   /* cursor: url(./images/ice.png) auto; */
   cursor: none;
 
 }
+/* .wallpaper{
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/Group\ 7.png');
+ background-position: center;
+ background-size: cover;
+ position: fixed;
+ z-index:0;
+} */
 
 
 
@@ -65,7 +78,7 @@
   justify-content: center;
   align-items: center;
   /* border: 1px solid blue; */
-  /* z-index: 1; */
+  z-index: 1;
   bottom: -20px;
   overflow: hidden;
 }
@@ -80,19 +93,17 @@
   position:absolute;
   display: block;
   /* top:-160%; */
-  z-index: 1;
-  transform: translateY(0px),;
+  /* z-index: 1; */
+  transform: translateY(0px);
   bottom:0px;
   /* opacity: 1; */
-  transition: transform 0.5s ease-in, display 1s ease-in;
+  transition: transform 0.5s ease-in
 }
-.rabbit:active{
-  /* z-index: 0; */
+/* .rabbit:active{
   transform: translateY(90px);
-  display: block;
 
 
-}
+} */
 
 .cursor{
   width:100px;
@@ -233,4 +244,56 @@
   background-size: contain;
   background-repeat: no-repeat;
 
+}
+.timer{
+  position: absolute;
+  top:30%;
+  right:10%;
+  color:white;
+}
+
+#b1,#b2,#b3{
+  transform: translateY(90px);
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.2s;
+}
+@keyframes example {
+  0%   {transform: translateY(0px);}
+  
+  100% {transform: translateY(90px);}
+}
+
+#ch1,#ch2,#ch3{
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+}
+
+#cr1,#cr2,#cr3{
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+
+}
+#k1,#k2,#k3,#b4{
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 0.9s;
+}
+
+.poplogo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
 }
