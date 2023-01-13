@@ -2,7 +2,8 @@ import React from "react";
 import { ScoreContext } from "../App";
 import '../App.css';
 import Logo from '../images/logo.png';
-import Logo2 from '../images/image2.png'
+import Logo2 from '../images/image2.png';
+import { motion, AnimatePresence } from "framer-motion";
 export default function Popup() {
   const { value,value2,value3,value4,value5 } = React.useContext(ScoreContext);
   const [open, setopen] = value3;
@@ -27,10 +28,28 @@ setopen(!open);
 
   return(
     <>
+        <AnimatePresence>
         {open &&
+        <motion.div
+        initial={{y:-1000,opacity:0}}
+        animate={{y:0,opacity:1,transition:{
+          duration:1,
+        }}}
+        exit={{y:-1000, opacity:0, transition:{
+          duration:1
+        }}}
         
-        <div className="blackScreen">
-            <div className="modalboxC">
+        className="blackScreen">
+            <motion.div
+            initial={{y:-1000,opacity:0}}
+            animate={{y:0,opacity:1,transition:{
+              duration:1,
+              delay:1,
+              type:"spring"
+            }}}
+            
+            
+            className="modalboxC">
                 <div className="poplogo">
                   <div><img src={Logo} alt='im' width={"70px"}></img></div>
                   <div><h6>Whack-A-Beast</h6> </div>
@@ -41,12 +60,14 @@ setopen(!open);
                <div><input id="name" type="text" placeholder="Name"></input></div>
                <div><button onClick={changeName}>Play</button></div>
                 
-            </div>
+            </motion.div>
             
             
-        </div>
-            
-            }
+        </motion.div>
+
+
+}
+</AnimatePresence>
             {
               countdownbool && 
               <div className="blackScreen">

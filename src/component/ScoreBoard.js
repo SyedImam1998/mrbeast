@@ -8,7 +8,8 @@ export default function ScoreBoard() {
     const[name,setName]=value2;
     const[open,setopen]=value3;
   return (
-    <div className='d-none d-lg-flex scoreboard'>
+    <div className=''>
+     <div className='d-none d-lg-flex scoreboard'>
     <div className='logo'></div>
     <div className='score'>
         
@@ -22,6 +23,11 @@ export default function ScoreBoard() {
 
 
     </div>
+     </div> 
+     <div className='smallscreen-scoreboad'>
+      <div>Score</div>
+      <div>{score}</div>
+     </div>
     
 </div>
   )

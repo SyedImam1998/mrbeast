@@ -10,6 +10,7 @@ import { ScoreContext } from '../App';
 import ScoreBoard from './ScoreBoard';
 import Popup from './Popup';
 import CountDown from './CountDown';
+import{motion, AnimatePresence} from 'framer-motion'
 // import React from 'react';
 
 export default function Homepage() {
@@ -43,22 +44,59 @@ export default function Homepage() {
             <div className='hole-board'>
              </div>
              {/* 1 */}
-             <Rabbit id="b1" image={Beast} top="0%" left="47%"></Rabbit>
-             <Rabbit id="b2" image={Beast} top="70%" left="12%"></Rabbit>
-             <Rabbit id="cr2" top="65%" left="63%" image={Beast} ></Rabbit>
-             <Rabbit id="b4" image={Nol} top="7%" left="60%"></Rabbit>
+             <div className="beast1">
+
+             <Rabbit id="b1" image={Beast} top="-10%" left="47%"></Rabbit>
+             </div>
+
+             <div className="beast2">
+              <Rabbit id="b2" image={Beast} top="70%" left="12%"></Rabbit>
+              </div>
+
+             <div className="beast3">
+              <Rabbit id="cr2" top="65%" left="63%" image={Beast} ></Rabbit>
+              </div>
+
+             <div className="beast4">
+              <Rabbit id="b4" image={Nol} top="7%" left="60%"></Rabbit>
+              </div>
   
-             <Rabbit id="ch1"  top="79%" left="47%" image={Chan} ></Rabbit>
-             <Rabbit id="ch2"  top="15%" left="32%" image={Chan}> </Rabbit>
-             <Rabbit id="ch3" top="25%" left="62%" image={Chan} ></Rabbit>
+             <div className="beast5">
+              <Rabbit id="ch1"  top="79%" left="47%" image={Chan} ></Rabbit>
+              </div>
+
+             <div className="beast6">
+              <Rabbit id="ch2"  top="15%" left="32%" image={Chan}> </Rabbit>
+              </div>
+
+             <div className="beast7">
+              <Rabbit id="b1" top="25%" left="62%" image={Chan} ></Rabbit>
+              </div>
              
-             <Rabbit id="cr1" top="65%" left="30%" image={Chris} ></Rabbit>
-             <Rabbit id="cr3" top="25%" left="47%" image={Chris} ></Rabbit>
-             <Rabbit id="b3" image={Chris}  top="70%" left="82%"></Rabbit>
+             <div className="beast8">
+              <Rabbit id="cr1" top="65%" left="30%" image={Chris} ></Rabbit>
+              </div>
+
+             <div className="beast9">
+              <Rabbit id="cr3" top="25%" left="47%" image={Chris} ></Rabbit>
+              </div>
+
+             <div className="beast10">
+              <Rabbit id="b3" image={Chris}  top="70%" left="82%"></Rabbit>
+              </div>
              
-             <Rabbit id="k1" top="56%" left="46%" image={Kar}></Rabbit>
-             <Rabbit id="k2" top="46%" left="75%" image={Kar} ></Rabbit>
-             <Rabbit id="k3" top="46%" left="25%" image={Kar} ></Rabbit>
+             <div className="beast11">
+              <Rabbit id="k1" top="56%" left="46%" image={Kar}></Rabbit>
+              </div>
+              
+             <div className='beast12'>
+
+             <Rabbit id="k2" top="46%" left="75%"  image={Kar} ></Rabbit>
+             </div>
+
+             <div className="beast">
+              <Rabbit id="k3" top="46%" left="25%" image={Kar} ></Rabbit>
+              </div>
   
   
             

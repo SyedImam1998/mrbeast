@@ -34,6 +34,8 @@ function resetTimer() {
 
 
   return (
+    <div>
+
     <div className='timer'>
         <Count progress={time} count={time}></Count>
         <button onClick={
@@ -41,5 +43,6 @@ function resetTimer() {
         }>reset</button>
 
     </div>
+     </div>
   )
 }
