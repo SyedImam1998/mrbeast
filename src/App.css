@@ -28,12 +28,25 @@
 .hole-board{
   width: 100%;
   height:100vh;
-  background-color: #202041;
+  background-color: #006a81;
   clip-path: polygon(37% 0, 66% 0, 100% 100%, 0 100%);
   border-radius: 0px;
   position: fixed;
   /* margin: 0 auto; */
-  /* z-index:1; */
+  z-index:1;
+  right: 0px;
+}
+.hole-board1{
+  width: 100%;
+  height:100vh;
+  /* background-color: #01ff7c; */
+  background-color: #e3447c;
+  clip-path: polygon(35.5% 0, 67.5% 0, 100% 97%, 0 97%);
+  border-radius: 165px;
+  position: fixed;
+  /* margin: 0 auto; */
+  z-index:0;
+  right: 0px;
 }
 
 .rabbitParent{
@@ -46,7 +59,7 @@
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
-  /* z-index:1; */
+  z-index:1;
   margin-bottom: 10px;
 }
 
@@ -190,17 +203,18 @@
 .blackScreen{
   display: none;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0,0,0,0.6);
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
 .modalboxC{
+  border: 2px solid white;
+  box-shadow: 1px 1px 14px white;
   width:30%;
   height: 30%;
   background-color: white;
@@ -211,8 +225,15 @@
   gap: 10%;
   align-items: center;
   flex-direction: column;
+  background-image: url(./images/Group\ 7.png);
+  background-position: center;
+  background-size: cover;
  
 
+}
+.modalboxC h6,h3{
+  color:white;
+  font-weight: bolder;
 }
 .modalboxC div input{
   max-width: 100%;
@@ -235,19 +256,11 @@
 }
 
 
-.modalboxC div input::before{
-  content:"";
-  width:100px;
-  height:40px;
-  z-index: 1;
-  background-image: url(./images/beast.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 
-}
 .timer{
   position: absolute;
+  width:60px;
+  height: 100px;
   top:30%;
   right:10%;
   color:white;
@@ -305,7 +318,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0687FF;
+  /* background-color: #0687FF; */
   /* border: 1px solid black; */
 }
 
@@ -315,6 +328,23 @@
 .smallscreen-scoreboad{
   display: none;
 }
+@media (width>990px){
+  .timer{
+    position: absolute;
+    top:5%;
+    left:8%;
+   
+  }
+
+}
+@media (900px < width < 1024px){
+  .modalboxC{
+    width: 65%;
+  }
+  
+}
+
+
 @media (width<=990px){
   .smallscreen-scoreboad{
     width: 80px;
@@ -344,6 +374,8 @@
   }
  
 }
+
+
 
 @media (width<=900px){
   .beast12{
@@ -377,7 +409,7 @@
     left: 50%;
   }
   .modalboxC{
-    width:45%;
+    width:60%;
     /* height: 45%; */
   }
 }
@@ -428,7 +460,7 @@
     display: none;
   }
   .modalboxC{
-    width:50%;
+    width:80%;
   }
 }
 @media (width<530px){
@@ -468,7 +500,7 @@
 }
 @media(width<350px){
   .modalboxC{
-    width:90%;
+    width:95%;
   }
 }
 .modalboxC div button{

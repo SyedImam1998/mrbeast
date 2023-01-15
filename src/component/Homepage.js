@@ -33,7 +33,7 @@ export default function Homepage() {
         },100)
       }}
       >
-        <Popup></Popup>
+        {/* <Popup></Popup> */}
         <ScoreBoard></ScoreBoard>
         {/* <div className='wallpaper'></div> */}
         <CountDown></CountDown>
@@ -41,6 +41,7 @@ export default function Homepage() {
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-sm-12'>
+             <div className='hole-board1'></div>
             <div className='hole-board'>
              </div>
              {/* 1 */}
