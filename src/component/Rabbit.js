@@ -5,7 +5,7 @@ export default function Rabbit(props) {
 
   const {value}=React.useContext(ScoreContext);
   const[score,setScore]=value;
-  console.log(score);
+  // console.log(score);
   return (
     
         <div className='rabbitParent' style={{top:props.top,left:props.left}}>

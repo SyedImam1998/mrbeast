@@ -11,6 +11,7 @@ import ScoreBoard from './ScoreBoard';
 import Popup from './Popup';
 import CountDown from './CountDown';
 import{motion, AnimatePresence} from 'framer-motion'
+import Leaderbtn from './Leaderbtn';
 // import React from 'react';
 
 export default function Homepage() {
@@ -33,10 +34,11 @@ export default function Homepage() {
         },100)
       }}
       >
-        {/* <Popup></Popup> */}
+        <Popup></Popup>
+        <Leaderbtn></Leaderbtn>
         <ScoreBoard></ScoreBoard>
         {/* <div className='wallpaper'></div> */}
-        <CountDown></CountDown>
+        {/* <CountDown></CountDown> */}
         <div className='cursor' style={{top:ypos,left:xpos}}></div>
         <div className='container-fluid'>
           <div className='row'>
