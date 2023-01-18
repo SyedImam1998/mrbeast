@@ -8,7 +8,7 @@ const {value6} =React.useContext(ScoreContext);
 const [showleader,setshowleader]=value6;
 
   return (
-    <div className='leaderboard-icon' onClick={()=>{
+    <div  onClick={()=>{
         setshowleader(!showleader);
     }} ><MdLeaderboard size={25} /></div>
   )

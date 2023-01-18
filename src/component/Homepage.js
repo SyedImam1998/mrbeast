@@ -35,10 +35,10 @@ export default function Homepage() {
       }}
       >
         <Popup></Popup>
-        <Leaderbtn></Leaderbtn>
         <ScoreBoard></ScoreBoard>
+        {/* <Leaderbtn></Leaderbtn> */}
         {/* <div className='wallpaper'></div> */}
-        {/* <CountDown></CountDown> */}
+        <CountDown></CountDown>
         <div className='cursor' style={{top:ypos,left:xpos}}></div>
         <div className='container-fluid'>
           <div className='row'>
@@ -65,7 +65,7 @@ export default function Homepage() {
               </div>
   
              <div className="beast5">
-              <Rabbit id="ch1"  top="79%" left="47%" image={Chan} ></Rabbit>
+              <Rabbit id="k1"  top="79%" left="47%" image={Chan} ></Rabbit>
               </div>
 
              <div className="beast6">
@@ -89,16 +89,16 @@ export default function Homepage() {
               </div>
              
              <div className="beast11">
-              <Rabbit id="k1" top="56%" left="46%" image={Kar}></Rabbit>
+              <Rabbit id="ch1" top="56%" left="46%" image={Nol}></Rabbit>
               </div>
               
              <div className='beast12'>
 
-             <Rabbit id="k2" top="46%" left="75%"  image={Kar} ></Rabbit>
+             <Rabbit id="cr3" top="46%" left="75%"  image={Kar} ></Rabbit>
              </div>
 
              <div className="beast">
-              <Rabbit id="k3" top="46%" left="25%" image={Kar} ></Rabbit>
+              <Rabbit id="b2" top="46%" left="25%" image={Kar} ></Rabbit>
               </div>
   
   

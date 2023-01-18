@@ -213,6 +213,7 @@
 
 }
 .modalboxC{
+  position: relative;
   border: 2px solid white;
   box-shadow: 1px 1px 14px white;
   width:30%;
@@ -260,10 +261,15 @@
 .timer{
   position: absolute;
   width:60px;
-  height: 100px;
+  height: 170px;
   top:30%;
   right:10%;
   color:white;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .timer button{
@@ -302,7 +308,7 @@
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 
 }
 #k1,#k2,#k3,#b4{
@@ -313,6 +319,26 @@
   animation-delay: 0.9s;
 }
 
+.bouncingballArea{
+  width:100px;
+  height: 100px;
+  border-bottom: 1px solid white;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+
+.bouncingball{
+  
+
+width: 30px;
+height: 30px;
+background-color: white;
+border-radius: 20px;
+margin:70% auto;
+}
 .poplogo{
   width: 100%;
   display: flex;
@@ -460,11 +486,29 @@ td{
 
 
 
+@media (width<=1440px){
+  .beast1{
+    position: absolute;
+    top: -4%;
+    left: 39%;
+  }
+}
 
 
 
+@media (width<=1024px){
+  .beast12{
+    position: absolute;
+    top: 46%;
+    left: 64%;
+  }
+  .beast1{
+    position: absolute;
+    top: -4%;
+    left: 39%;
 
-
+  }
+}
 
 
 @media (width>990px){
@@ -514,7 +558,18 @@ td{
  
 }
 
-
+@media(width<=913px){
+  .beast4{
+    position: absolute;
+    top: 7%;
+    left: 52%;
+  }
+  .beast10{
+    position: absolute;
+    top: 76%;
+    left: 77%;
+  }
+}
 
 @media (width<=900px){
   .beast12{
@@ -527,6 +582,18 @@ td{
   }
 }
 
+@media(width<=821px){
+  .beast4{
+    position: absolute;
+    top: 7%;
+    left: 52%;
+  }
+  .beast10{
+    position: absolute;
+    top: 77%;
+    left: 75%;
+  }
+}
 
 @media (width<=768px){
   .beast12{
@@ -536,12 +603,16 @@ td{
   }
   
   .beast10{
-    display: none;
-  }.beast9{
+    /* display: none; */
     position: absolute;
-    top:25%;
-    left:40%;
+    top: 31%;
+    left: 44%;
   }
+  .beast9 {
+    position: absolute;
+    top: 30%;
+    left: 19%;
+}
   .beast4{
     position:absolute;
     top: 7%;
@@ -550,6 +621,16 @@ td{
   .modalboxC{
     width:60%;
     /* height: 45%; */
+  }
+  .beast5{
+    position: absolute;
+    top: 74%;
+    left: 47%;
+  }
+  .beast11{
+    position: absolute;
+    top: 51%;
+    left: 46%;
   }
 }
 
@@ -621,6 +702,31 @@ td{
   }
  
 }
+
+@media (width<=426px){
+  .beast{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+  }
+  .beast2{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+  }
+  .beast5 {
+    position: absolute;
+    top: 76%;
+    left: 47%;
+}
+}
+@media(width<=412px){
+  .beast1 {
+    position: absolute;
+    top: -6%;
+    left: 35%;
+}
+}
 @media (width<400px){
   .beast6{
     position: absolute;
@@ -637,9 +743,54 @@ td{
   }
 
 }
+
+@media (width<=391px){
+  .beast3{
+    position: absolute;
+    top: 65%;
+    left: 59%;
+  }
+}
+@media (width <= 376px){
+  .beast8 {
+    position: absolute;
+    top: 55%;
+    left: 6%;
+}
+.beast3{
+  position: absolute;
+
+  top: 58%;
+  left: 52%;
+}
+}
 @media(width<350px){
   .modalboxC{
     width:95%;
+  }
+}
+
+@media(width<=320px){
+  .beast4{
+    left:24%;
+    /* border:1px solid white; */
+  }
+  .beast1{
+    left:28%;
+  }
+  .beast8{
+    left:10%;
+    top:59%;
+  }
+  .beast3{
+    position: absolute;
+    top: 55%;
+    left: 49%;
+  }
+  .beast2{
+    position: absolute;
+    top: 75%;
+    left: 1%;
   }
 }
 .modalboxC div button{
