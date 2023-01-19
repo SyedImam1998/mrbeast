@@ -200,6 +200,25 @@
 
 }
 
+.poplogo .beastimage{
+  width: 70px;
+  height: 100%;
+  background-image: url('./images/logo.png');
+  background-position: center;
+  background-size: cover;
+  /* border: 1px solid white; */
+
+}
+.poplogo .beastimage2{
+  width: 70px;
+  height: 100%;
+  background-image: url('./images/image2.png');
+  background-position: center;
+  background-size: cover;
+  /* transform:rotateX(25px); */
+  /* border: 1px solid white; */
+
+}
 .blackScreen{
   display: none;
   width: 100%;
