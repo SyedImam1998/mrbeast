@@ -24,9 +24,12 @@ const[loading,setloading]=value8;
 const changeName=()=>{
     var name=document.getElementById("name").value;
     console.log(name)
-setName(name.toString());
-setopen(false);
-setPlay(true)
+    if(name!==""){
+
+      setName(name.toString());
+    }
+    setopen(false);
+    setPlay(true)
 
 }
 
@@ -77,7 +80,7 @@ React.useEffect(()=>{
 
                     <div className="cancel" onClick={()=>{setopen(false)}}><IoMdClose  size="28px" /></div>
                   <div><input id="name" type="text" placeholder="Name"></input></div>
-                  <div><m.button whileHover={{scale:1.6}} whileTap={{y:10}} onClick={changeName}>Play</m.button></div>
+                  <div><m.button whileHover={{scale:1.4}} whileTap={{y:10}} onClick={changeName}>Play</m.button></div>
                     
                 </m.div>
                 

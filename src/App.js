@@ -6,7 +6,7 @@ export const ScoreContext=React.createContext();
 function App() {
 const[score,setScore]=useState(0);
 const[name,setName]=useState("Mr Beast");
-const[open,setopen]=useState(false);
+const[open,setopen]=useState(true);
 const[countdownbool,setcountdownbool]=useState(false);
 const[time,settime]=useState(30);
 const[showleader,setshowleader]=useState(false);

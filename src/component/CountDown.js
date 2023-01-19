@@ -22,7 +22,7 @@ const[data,setData]=React.useState([]);
 
 
 React.useEffect(() => {
-  console.log("useEffect",open,countdownbool,calledApi)
+  console.log("useEffect",open,countdownbool,calledApi,play)
   if(!open && !countdownbool && !calledApi && play){
 
     let intervalId = setInterval(() => {
@@ -111,7 +111,9 @@ const lookScores=async()=>{
     }
     console.log(data)
   }else{
-    setcountdownbool(true)
+    setcountdownbool(true);
+    setcalledApi(false)
+
   }
     
     

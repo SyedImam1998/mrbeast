@@ -6,17 +6,22 @@ import Chris from '../images/chris.png';
 import Chan from '../images/chan.png';
 import Kar from '../images/kar.png';
 import Nol from '../images/nol.png';
+import Hammer from '../images/hammer.mp3';
 import { ScoreContext } from '../App';
 import ScoreBoard from './ScoreBoard';
 import Popup from './Popup';
 import CountDown from './CountDown';
 import{motion, AnimatePresence} from 'framer-motion'
 import Leaderbtn from './Leaderbtn';
+import useSound from 'use-sound'
+
 // import React from 'react';
 
 export default function Homepage() {
     const [xpos,setx]=React.useState('0px');
     const [ypos,sety]=React.useState('0px');
+    const [playSound] = useSound(Hammer);
+
     
     // console.log(value);
   return (
@@ -32,6 +37,8 @@ export default function Homepage() {
         setTimeout(()=>{
           cur.classList.remove('cursorClicked');
         },100)
+        playSound();
+
       }}
       >
         <Popup></Popup>
@@ -47,6 +54,8 @@ export default function Homepage() {
             <div className='hole-board'>
              </div>
              {/* 1 */}
+
+
              <div className="beast1">
 
              <Rabbit id="b1" image={Beast} top="-10%" left="47%"></Rabbit>
@@ -73,7 +82,7 @@ export default function Homepage() {
               </div>
 
              <div className="beast7">
-              <Rabbit id="b1" top="25%" left="62%" image={Chan} ></Rabbit>
+              <Rabbit id="b5" top="25%" left="62%" image={Chan} ></Rabbit>
               </div>
              
              <div className="beast8">
@@ -81,7 +90,7 @@ export default function Homepage() {
               </div>
 
              <div className="beast9">
-              <Rabbit id="cr3" top="25%" left="47%" image={Chris} ></Rabbit>
+              <Rabbit id="k2" top="25%" left="47%" image={Chris} ></Rabbit>
               </div>
 
              <div className="beast10">
@@ -98,7 +107,7 @@ export default function Homepage() {
              </div>
 
              <div className="beast">
-              <Rabbit id="b2" top="46%" left="25%" image={Kar} ></Rabbit>
+              <Rabbit id="k5" top="46%" left="25%" image={Kar} ></Rabbit>
               </div>
   
   
