@@ -121,10 +121,15 @@ React.useEffect(()=>{
             
             className="modalboxC">
                 <div className="poplogo">
-                  <div><img src={Logo}  alt='im' width={"70px"}></img></div>
-                  <div><h6>Whack-A-Beast</h6></div>
-                  <div><img src={Logo2} width={"70px"} style={{transform:'rotateX(25px)'}} alt='im'></img></div> 
-                </div>
+                <div className="beastimage">
+                        {/* <img src={Logo} alt='im' width={"70px"}></img> */}
+                        </div>
+                      <div><h6>Whack-A-Beast</h6> </div>
+                      <div className="beastimage2">
+                        {/* <img src={Logo2} width={"70px"} style={{transform:'rotateX(25px)'}} alt='im'></img> */}
+                      </div>
+                  
+                  </div>
               
 
                 <div className="cancel" onClick={()=>{setcountdownbool(false)}}><IoMdClose  size="28px" /></div>
