@@ -36,7 +36,7 @@ const changeName=()=>{
 
 const fetchData=async()=>{
   let { data, error } = await supabase
-  .from('MrBeast')
+  .from('beast')
   .select('*').limit(10)
   // console.log(data);
   let sortedData=data.sort((a,b)=>(a.score<b.score)?1:-1);
@@ -46,7 +46,8 @@ const fetchData=async()=>{
 
 React.useEffect(()=>{
   fetchData();
-},[])
+  console.log("Popup useEffect")
+},[showleader])
 
 
 

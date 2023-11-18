@@ -56,7 +56,7 @@ const lookScores=async()=>{
   console.log("lookScore function")
 
     let { data: data, error } = await supabase
-    .from('MrBeast')
+    .from('beast')
     .select('*').limit(11)
     console.log(data);
   
@@ -74,7 +74,7 @@ const lookScores=async()=>{
       if(!calledApi){
         // setcalledApi(true);
         setloading(true)
-        const{error}=await supabase.from('MrBeast').insert({name,score});
+        const{error}=await supabase.from('beast').insert({name,score});
         setloading(false)
         
         setcountdownbool(true)
@@ -100,8 +100,8 @@ const lookScores=async()=>{
       //const{data,error}=await supabase.from('MrBeast').update({ name: name,score:score }).eq('id', id);
       setloading(true)
 
-      const { error } = await supabase.from('MrBeast').delete().eq('id', sortedData[sortedData.length-1].id);
-      const{error1}=await supabase.from('MrBeast').insert({name,score});
+      const { error } = await supabase.from('beast').delete().eq('id', sortedData[sortedData.length-1].id);
+      const{error1}=await supabase.from('beast').insert({name,score});
       setloading(false)
 
 
